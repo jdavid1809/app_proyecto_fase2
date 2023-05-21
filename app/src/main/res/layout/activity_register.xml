@@ -4,16 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
-
-    <TextView
-        android:id="@+id/userWelcome"
-        android:layout_width="413dp"
-        android:layout_height="55dp"
-        android:background="@color/mexicanPink"
-        android:text="Bienvenida"
-        android:textSize="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".RegisterActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
