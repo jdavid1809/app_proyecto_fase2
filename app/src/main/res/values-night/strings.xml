@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">Cinformate</string>
+    <string name="login">Login</string>
+    <string name="contrasena">Contraseña</string>
+</resources>
