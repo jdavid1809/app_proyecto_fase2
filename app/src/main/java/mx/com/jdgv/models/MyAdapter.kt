@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import com.squareup.picasso.Picasso
 import mx.com.jdgv.databinding.ItemPeliculaBinding
 
 class MyAdapter(private val context: Context, private val arrayList: java.util.ArrayList<Movie>) : BaseAdapter() {
@@ -31,6 +32,7 @@ class MyAdapter(private val context: Context, private val arrayList: java.util.A
         binding.yearMovie.text = arrayList[position].year.toString()
         binding.directorMovie.text = arrayList[position].director
         binding.durationMovie.text = arrayList[position].duration
+        Picasso.get().load(arrayList[position].imageUrl).into(binding.imageMovie)
         return convertView
 
     }

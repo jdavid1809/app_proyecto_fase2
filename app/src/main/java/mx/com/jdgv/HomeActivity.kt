@@ -1,5 +1,6 @@
 package mx.com.jdgv
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -40,6 +41,14 @@ class HomeActivity : AppCompatActivity() {
 
         var itemAdapter = MyAdapter(this, peliculas)
         binding.listaPeliculas.adapter = itemAdapter
+
+        binding.listaPeliculas.setOnItemClickListener { parent, view, position, id ->
+
+            val intent = Intent(this, MovieDetailsActivity::class.java).apply {
+
+            }
+            startActivity(intent)
+        }
 
 
     }

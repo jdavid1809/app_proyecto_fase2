@@ -15,7 +15,7 @@ var movie1: Movie = Movie(
     "8",
     "Marc Webb",
     "1h 41m",
-    "https://images.justwatch.com/poster/244085497/s718/un-don-excepcional.%7Bformat%7D",
+    "https://pics.filmaffinity.com/Un_don_excepcional-371696918-large.jpg",
     "https://www.starplus.com/es-419/video/4d3aa368-e75b-4651-8c32-86369bd62d9c",
     "Frank y su madre se enfrentan por la custodia de Mary, la sobrina de Frank. Mary es una niña con un talento fuera de lo común para las matemáticas y la madre de Frank, una mujer muy brillante, quiere tutelarla; pero él se niega a ceder su custodia porque desea que Mary disfrute de una infancia normal."
 )
@@ -73,6 +73,10 @@ var movie6: Movie = Movie(
     "https://static.cinepolis.com/resources/mx/movies/posters/414x603/41817-671406-20230503114933.jpg",
     "https://cinepolis.com/pelicula/guardianes-de-la-galaxia-vol-3",
     "Guardianes de la Galaxia vol. 3 es una película de superhéroes estadounidense basada en el equipo de superhéroes Guardianes de la Galaxia, perteneciente a Marvel Comics."
+)
+
+var images = mutableListOf<Int>(
+
 )
 
 
