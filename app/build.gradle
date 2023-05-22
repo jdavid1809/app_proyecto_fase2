@@ -7,6 +7,10 @@ android {
     namespace 'mx.com.jdgv'
     compileSdk 33
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "mx.com.jdgv"
         minSdk 28
