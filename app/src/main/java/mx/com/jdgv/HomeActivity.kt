@@ -5,8 +5,15 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import mx.com.jdgv.databinding.ActivityHomeBinding
+import mx.com.jdgv.models.Movie
+import mx.com.jdgv.models.MyAdapter
 import mx.com.jdgv.variables.USERS
-import mx.com.jdgv.variables.peliculas
+import mx.com.jdgv.variables.movie1
+import mx.com.jdgv.variables.movie2
+import mx.com.jdgv.variables.movie3
+import mx.com.jdgv.variables.movie4
+import mx.com.jdgv.variables.movie5
+import mx.com.jdgv.variables.movie6
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var username: TextView
@@ -23,7 +30,15 @@ class HomeActivity : AppCompatActivity() {
         username= findViewById(R.id.userWelcome)
         username.text = "Bienvenido ${USERS[count!!].getNombre()}"
 
-        var itemAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, peliculas)
+        var peliculas = ArrayList<Movie>()
+        peliculas.add(movie1)
+        peliculas.add(movie2)
+        peliculas.add(movie3)
+        peliculas.add(movie4)
+        peliculas.add(movie5)
+        peliculas.add(movie6)
+
+        var itemAdapter = MyAdapter(this, peliculas)
         binding.listaPeliculas.adapter = itemAdapter
 
 
