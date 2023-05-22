@@ -16,6 +16,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var usuario:EditText
     private lateinit var password:EditText
     private lateinit var inicioButton: Button
+    private lateinit var registroButton: Button
 
     @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,12 +27,12 @@ class LoginActivity : AppCompatActivity() {
         usuario = findViewById(R.id.user)
         password = findViewById(R.id.password)
         inicioButton = findViewById(R.id.botonIngresar)
+        registroButton = findViewById(R.id.botonRegister)
 
         inicioButton.setOnClickListener(){
-
             var count = 0
             for (i in USERS){
-                if (i.getNombre() == usuario.text.toString()){
+                if (i.getNoCliente().toString() == usuario.text.toString()){
                     if(i.getContraseña() == password.text.toString()){
                         println(count)
                         val bundle = Bundle()
@@ -48,7 +49,11 @@ class LoginActivity : AppCompatActivity() {
                 }
                 count++
             }
+        }
 
+        registroButton.setOnClickListener(){
+            val intent = Intent(this,RegisterActivity::class.java).apply {}
+            startActivity(intent)
         }
 /*
         usuario.addTextChangedListener(object : TextWatcher{
