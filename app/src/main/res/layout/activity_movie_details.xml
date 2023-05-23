@@ -84,11 +84,22 @@
                 android:textSize="16sp" />
 
             <Button
+                android:id="@+id/goMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@color/mexicanPink"
+                android:onClick="closeDialog"
+                android:text="Ir a ver"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
                 android:id="@+id/goBack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="64dp"
-                android:background="@color/mexicanPink"
+                android:layout_marginTop="16dp"
+                android:background="@color/design_default_color_secondary"
                 android:onClick="closeDialog"
                 android:text="Regresar"
                 android:textColor="@color/white"
