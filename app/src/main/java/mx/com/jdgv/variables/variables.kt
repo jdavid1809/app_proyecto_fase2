@@ -15,7 +15,7 @@ var movie1: Movie = Movie(
     "8",
     "Marc Webb",
     "1h 41m",
-    "https://pics.filmaffinity.com/Un_don_excepcional-371696918-large.jpg",
+    "https://pics.filmaffinity.com/Un_don_excepcional-360543485-mmed.jpg",
     "https://www.starplus.com/es-419/video/4d3aa368-e75b-4651-8c32-86369bd62d9c",
     "Frank y su madre se enfrentan por la custodia de Mary, la sobrina de Frank. Mary es una niña con un talento fuera de lo común para las matemáticas y la madre de Frank, una mujer muy brillante, quiere tutelarla; pero él se niega a ceder su custodia porque desea que Mary disfrute de una infancia normal."
 )
@@ -48,7 +48,7 @@ var movie4: Movie = Movie(
     "9",
     "Marc Forster",
     "2h 6m",
-    "https://pics.filmaffinity.com/El_peor_vecino_del_mundo-750379114-large.jpg",
+    "https://www.sonypictures.com.mx/sites/mexico/files/2023-02/Key-Art_1400x2100_A-Man-Called-Otto.jpg",
     "https://play.hbomax.com/page/urn:hbo:page:GZDZ4jASL83SfmgEAAAdO:type:feature?source=googleHBOMAX&action=open",
     "Otto es un hombre viudo, malhumorado y huraño que vive en soledad. Un día, una joven familia se muda a la casa de al lado y, contra todo pronóstico, Otto entabla amistad con Marisol, una mujer embarazada, ingeniosa e inteligente."
 )
