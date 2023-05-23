@@ -11,7 +11,7 @@ import mx.com.jdgv.models.User
 
 var movie1: Movie = Movie(
     "Un don excepcional",
-    2017,
+    "2017",
     "8",
     "Marc Webb",
     "1h 41m",
@@ -22,7 +22,7 @@ var movie1: Movie = Movie(
 
 var movie2: Movie = Movie(
     "The Help",
-    2011,
+    "2011",
     "8",
     "Tate Taylor",
     "2h 26m",
@@ -33,7 +33,7 @@ var movie2: Movie = Movie(
 
 var movie3: Movie = Movie(
     "¿Por qué el?",
-    2016,
+    "2016",
     "6",
     "John Hamburg",
     "1h 51m",
@@ -44,7 +44,7 @@ var movie3: Movie = Movie(
 
 var movie4: Movie = Movie(
     "Un vecino gruñón",
-    2022,
+    "2022",
     "9",
     "Marc Forster",
     "2h 6m",
@@ -55,7 +55,7 @@ var movie4: Movie = Movie(
 
 var movie5: Movie = Movie(
     "Pasante de moda",
-    2015,
+    "2015",
     "8",
     "Nancy Meyers",
     "2h 1m",
@@ -66,7 +66,7 @@ var movie5: Movie = Movie(
 
 var movie6: Movie = Movie(
     "Guardians of the Galaxy Vol. 3",
-    2023,
+    "2023",
     "7",
     "James Gunn",
     "1h 41m",

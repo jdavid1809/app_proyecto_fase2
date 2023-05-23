@@ -18,7 +18,7 @@ import mx.com.jdgv.variables.movie6
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var username: TextView
-    lateinit var arratAdapter: ArrayAdapter<*>
+    lateinit var arrayAdapter: ArrayAdapter<*>
     private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +45,14 @@ class HomeActivity : AppCompatActivity() {
         binding.listaPeliculas.setOnItemClickListener { parent, view, position, id ->
 
             val intent = Intent(this, MovieDetailsActivity::class.java).apply {
-
+                putExtra("TITLE", peliculas[id.toInt()].title)
+                putExtra("YEAR", peliculas[id.toInt()].year)
+                putExtra("RATING", peliculas[id.toInt()].rating)
+                putExtra("DIRECTOR", peliculas[id.toInt()].director)
+                putExtra("DURATION", peliculas[id.toInt()].duration)
+                putExtra("IMAGE", peliculas[id.toInt()].imageUrl)
+                putExtra("LINK", peliculas[id.toInt()].locationUrl)
+                putExtra("DESCRIPTION", peliculas[id.toInt()].description)
             }
             startActivity(intent)
         }

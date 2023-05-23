@@ -32,6 +32,7 @@ class MyAdapter(private val context: Context, private val arrayList: java.util.A
         binding.yearMovie.text = arrayList[position].year.toString()
         binding.directorMovie.text = arrayList[position].director
         binding.durationMovie.text = arrayList[position].duration
+        binding.ratingMovie.text = "Calificacion: ${arrayList[position].rating}/10"
         Picasso.get().load(arrayList[position].imageUrl).into(binding.imageMovie)
         return convertView
 
